@@ -90,27 +90,27 @@ public class AssignEdgeWeights {
 		return (int) ans;
 	}
 	
-	public static void main(String[] args) {
-        AssignEdgeWeights obj = new AssignEdgeWeights();
+// 	public static void main(String[] args) {
+//         AssignEdgeWeights obj = new AssignEdgeWeights();
 
-        // Example usage
-        int[][] edges = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
-        long result = obj.assignEdgeWeight(edges);
-//        System.out.println("Result: " + result);
-//
-//        // Calculate time and space complexity (for reference purposes)
-//        System.out.println("Time Complexity: O(V+E)"); // As there are V vertices in the graph, and E edges          //There was an error with V & E
-//        System.out.println("Space Complexity: O(V)" + ", where V is the number of vertices");
+//         // Example usage
+//         int[][] edges = {{1, 2}, {2, 3}, {3, 4}, {4, 5}};
+//         long result = obj.assignEdgeWeight(edges);
+// //        System.out.println("Result: " + result);
+// //
+// //        // Calculate time and space complexity (for reference purposes)
+// //        System.out.println("Time Complexity: O(V+E)"); // As there are V vertices in the graph, and E edges          //There was an error with V & E
+// //        System.out.println("Space Complexity: O(V)" + ", where V is the number of vertices");
         
-        System.out.println("Test 1 - Linear chain (1-2-3-4-5): " + result);
-        System.out.println("Expected: 8");
+//         System.out.println("Test 1 - Linear chain (1-2-3-4-5): " + result);
+//         System.out.println("Expected: 8");
 
-        System.out.println("Time Complexity: O(V + E), where V = vertices, E = edges");
-        System.out.println("Space Complexity: O(V), where V is the number of vertices");
+//         System.out.println("Time Complexity: O(V + E), where V = vertices, E = edges");
+//         System.out.println("Space Complexity: O(V), where V is the number of vertices");
         
-    }
+//     }
 	
-	public static void main2(String[] args) {
+	public static void main(String[] args) {
         AssignEdgeWeights obj = new AssignEdgeWeights();
 
         // Test 1: Single edge, maxDep=1, expected 2^0 = 1
