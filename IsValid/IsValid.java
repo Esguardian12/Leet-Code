@@ -49,8 +49,10 @@ Constraints:
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
  * 
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(N), Where $N$ is the length of the string s.s.toCharArray() converts the string into a char array in ${O}(N)$ time.The loop 
+ * 			iterates through each character in the string exactly once.Stack operations (push, pop, peek, isEmpty) all execute in ${O}(1)$ time.
+ * Space Complexity: O(N), In the worst-case scenario (e.g., an input string containing only open brackets like "((((((("), the stack will store all $N$ characters, 
+ * 			requiring ${O}(N)$ space.s.toCharArray() also allocates an array of size $N$ in heap memory.
  */
 
 public class IsValid {
@@ -116,4 +118,3 @@ public class IsValid {
 		// Expected: false
 	}
 }
-
