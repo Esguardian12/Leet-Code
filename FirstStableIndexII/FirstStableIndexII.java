@@ -43,8 +43,11 @@ Constraints:
 0 <= nums[i] <= 109
 0 <= k <= 109
  * 
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(N), Where $N$ is the length of the array nums. The algorithm makes exactly two linear passes over the array: one backward pass to 
+ * 			precompute the suffMin array and one forward pass to calculate the running prefMax and evaluate the instability score. Both passes perform strictly 
+ * 			${O}(1)$ operations per element.
+ * Space Complexity: O(N), The algorithm allocates a single integer array suffMin of size $N$ to store the suffix minimums. The prefix maximum is tracked using a 
+ * 			single primitive integer variable on the fly, keeping the extra space strictly linear.
  */
 
 public class FirstStableIndexII {
