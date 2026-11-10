@@ -30,8 +30,9 @@ n == nums.length
 1 <= nums.length <= 105
 -109 <= nums[i] <= 109
  * 
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(N log N), Where $N$ is the number of elements in the nums array. The dominant operation is sorting the array using Java's Dual-Pivot 
+ * 			Quicksort to locate the median element. Summing the absolute differences takes $\mathcal{O}(N)$ linear time.
+ * Space Complexity: O(log N), Auxiliary stack space required by the sorting algorithm for primitive arrays.
  */
 
 public class MinMoves2 {
@@ -66,4 +67,3 @@ public class MinMoves2 {
 		// Expected: 16
 	}
 }
-
